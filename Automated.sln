@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiCheck", "src\ApiCheck\ApiCheck.csproj", "{D181E8A5-B92F-402F-9819-0CB6595FFD86}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ApiCheck", "src\ApiCheck\ApiCheck.fsproj", "{B8581C74-7399-4224-AC1B-06D804F6E044}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ApiCheck.Test", "test\ApiCheck.Test\ApiCheck.Test.fsproj", "{E5F27083-4D33-4D83-9986-53A2840BECC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D181E8A5-B92F-402F-9819-0CB6595FFD86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D181E8A5-B92F-402F-9819-0CB6595FFD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D181E8A5-B92F-402F-9819-0CB6595FFD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D181E8A5-B92F-402F-9819-0CB6595FFD86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8581C74-7399-4224-AC1B-06D804F6E044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8581C74-7399-4224-AC1B-06D804F6E044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8581C74-7399-4224-AC1B-06D804F6E044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8581C74-7399-4224-AC1B-06D804F6E044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F27083-4D33-4D83-9986-53A2840BECC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F27083-4D33-4D83-9986-53A2840BECC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F27083-4D33-4D83-9986-53A2840BECC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F27083-4D33-4D83-9986-53A2840BECC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
