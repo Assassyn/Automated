@@ -2,7 +2,8 @@
 
 namespace Automation.ApiCheck
 {
-    public sealed class Tester
+    public sealed class Test
     {
+
     }
 }
