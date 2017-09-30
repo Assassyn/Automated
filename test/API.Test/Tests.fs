@@ -1,6 +1,6 @@
 namespace Automated.API.Test
 
-module Tests
+module Tests = 
 
     open System
     open Xunit

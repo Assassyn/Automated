@@ -2,7 +2,18 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <IsPackable>false</IsPackable>
+    <AssemblyName>Automated.API.Test.CSharp</AssemblyName>
+    <RootNamespace>Automated.API.Test.CSharp</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>API.Test.CSharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>API.Test.CSharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="ApiUsageExample.cs" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FakeItEasy" Version="4.0.0" />
     <PackageReference Include="FSharp.Core" Version="4.2.3" />

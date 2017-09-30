@@ -1,5 +1,5 @@
-namespace API
+namespace Automated
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+module API =
+    let Test baseURL =
+        printfn "Hello %s" baseURL
