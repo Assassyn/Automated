@@ -8,4 +8,12 @@
     <Compile Include="API.fs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.2.3" />
+  </ItemGroup>
+
 </Project>
