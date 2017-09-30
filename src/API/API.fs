@@ -1,4 +1,4 @@
-namespace Automated.ApiCheck
+namespace API
 
 module Say =
     let hello name =
