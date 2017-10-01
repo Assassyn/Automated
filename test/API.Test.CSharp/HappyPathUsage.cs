@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿/// <copyright file="HappyPathUsage.cs" company="Automated">
+///     Automated. All rights reserved.
+/// </copyright>
+/// <author>Szymon M Sasin</author>
+
 using Xunit;
-using static Automated.Types;
 
 namespace Automated.API.Test.CSharp
 {
@@ -10,18 +11,16 @@ namespace Automated.API.Test.CSharp
     {
         public HappyPathUsage()
         {
-
         }
 
-        [Fact]
-        public void ApiCheckCanCreateRequest()
+        [Theory]
+        [InlineData("")]
+        public void SampleCSharpUsse(string method)
         {
-            IRequest request = ApiCheck
+            var request = ApiCheck
                 .WithString("https://testwebhooks.com/c/Automated.ApiCheck")
                 .WithMethod("POST")
                 .WithPayload("{property:'test'}");
-
-            Assert.NotNull(request);
         }
     }
 }
