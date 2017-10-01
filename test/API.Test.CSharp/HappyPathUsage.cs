@@ -1,7 +1,6 @@
-﻿/// <copyright file="HappyPathUsage.cs" company="Automated">
-///     Automated. All rights reserved.
-/// </copyright>
-/// <author>Szymon M Sasin</author>
+﻿// <copyright file="HappyPathUsage.cs" company="Picums">
+// Copyright (c) Picums. All rights reserved.
+// </copyright>
 
 using Xunit;
 
@@ -13,11 +12,10 @@ namespace Automated.API.Test.CSharp
         {
         }
 
-        [Theory]
-        [InlineData("")]
-        public void SampleCSharpUsse(string method)
+        [Fact]
+        public void SampleCSharpUse()
         {
-            var request = ApiCheck
+            ApiCheck
                 .WithString("https://testwebhooks.com/c/Automated.ApiCheck")
                 .WithMethod("POST")
                 .WithPayload("{property:'test'}");
