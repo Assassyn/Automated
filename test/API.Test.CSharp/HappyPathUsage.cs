@@ -3,6 +3,7 @@
 // </copyright>
 
 using Xunit;
+using Xunit.Should;
 
 namespace Automated.API.Test.CSharp
 {
@@ -15,10 +16,14 @@ namespace Automated.API.Test.CSharp
         [Fact]
         public void SampleCSharpUse()
         {
-            ApiCheck
+            var request = ApiCheck
                 .WithString("https://testwebhooks.com/c/Automated.ApiCheck")
                 .WithMethod("POST")
                 .WithPayload("{property:'test'}");
+
+            var response = request.Execute();
+
+            Assert.Equal("200", response.HttpStatusCode);
         }
     }
 }
