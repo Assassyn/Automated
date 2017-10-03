@@ -2,6 +2,7 @@
 
 module Types =
     open System
+    open System.Net.Http
 
     type Response(code:string, body:string) =
         member this.HttpStatusCode = code
@@ -14,7 +15,15 @@ module Types =
     type WithQueryString(uri: Uri, method: string, queryString: string) =
         interface IRequest with 
             member this.Execute (): Response = 
-                 Response ("", "")
+                let response = async {
+                    let client = HttpClient()
+                    let response = client.GetAsync("http://www.contoso.com/");
+                    let responseBody = response.Content.ReadAsStringAsync();
+                    {200, responseBody}
+                }
+                //    new HttpClient()
+                //client.
+                Response ("", "")
 
     type WithBody(uri: Uri, method: string, body: string) =
         interface IRequest with 
