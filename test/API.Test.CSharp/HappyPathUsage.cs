@@ -17,7 +17,7 @@ namespace Automated.API.Test.CSharp
         public void SampleCSharpUse()
         {
             var request = ApiCheck
-                .WithString("https://testwebhooks.com/c/Automated.ApiCheck")
+                .WithUri(new Uri("https://testwebhooks.com/c/Automated.ApiCheck"))
                 .WithMethod("POST")
                 .WithPayload("{property:'test'}");
 
