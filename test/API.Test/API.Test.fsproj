@@ -22,6 +22,6 @@
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\API\API.fsproj" />
+    <ProjectReference Include="..\..\src\API\API.csproj" />
   </ItemGroup>
 </Project>

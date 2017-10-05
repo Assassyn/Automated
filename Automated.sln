@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
@@ -7,38 +6,51 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A6EAF670-900
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3943FB51-5843-4C50-B191-FCD5E19624B9}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "API", "src\API\API.fsproj", "{F692A8CB-D249-44BA-8E2B-2D307DF1F1D5}"
-EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "API.Test", "test\API.Test\API.Test.fsproj", "{DA850308-F6CA-46C2-96F1-29B035548565}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Test.CSharp", "test\API.Test.CSharp\API.Test.CSharp.csproj", "{003FA570-99B5-484D-A484-0134AA911B25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "src\API\API.csproj", "{AD52C833-069F-4BDC-8600-DDC400DA3EF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F692A8CB-D249-44BA-8E2B-2D307DF1F1D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F692A8CB-D249-44BA-8E2B-2D307DF1F1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F692A8CB-D249-44BA-8E2B-2D307DF1F1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F692A8CB-D249-44BA-8E2B-2D307DF1F1D5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA850308-F6CA-46C2-96F1-29B035548565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA850308-F6CA-46C2-96F1-29B035548565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA850308-F6CA-46C2-96F1-29B035548565}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DA850308-F6CA-46C2-96F1-29B035548565}.Debug|x64.Build.0 = Debug|Any CPU
+		{DA850308-F6CA-46C2-96F1-29B035548565}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DA850308-F6CA-46C2-96F1-29B035548565}.Debug|x86.Build.0 = Debug|Any CPU
 		{DA850308-F6CA-46C2-96F1-29B035548565}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA850308-F6CA-46C2-96F1-29B035548565}.Release|Any CPU.Build.0 = Release|Any CPU
-		{003FA570-99B5-484D-A484-0134AA911B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{003FA570-99B5-484D-A484-0134AA911B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{003FA570-99B5-484D-A484-0134AA911B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{003FA570-99B5-484D-A484-0134AA911B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA850308-F6CA-46C2-96F1-29B035548565}.Release|x64.ActiveCfg = Release|Any CPU
+		{DA850308-F6CA-46C2-96F1-29B035548565}.Release|x64.Build.0 = Release|Any CPU
+		{DA850308-F6CA-46C2-96F1-29B035548565}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA850308-F6CA-46C2-96F1-29B035548565}.Release|x86.Build.0 = Release|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Debug|x64.Build.0 = Debug|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Debug|x86.Build.0 = Debug|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Release|x64.ActiveCfg = Release|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Release|x64.Build.0 = Release|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Release|x86.ActiveCfg = Release|Any CPU
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F692A8CB-D249-44BA-8E2B-2D307DF1F1D5} = {A6EAF670-900F-4807-8970-367F179EC235}
 		{DA850308-F6CA-46C2-96F1-29B035548565} = {3943FB51-5843-4C50-B191-FCD5E19624B9}
-		{003FA570-99B5-484D-A484-0134AA911B25} = {3943FB51-5843-4C50-B191-FCD5E19624B9}
+		{AD52C833-069F-4BDC-8600-DDC400DA3EF6} = {A6EAF670-900F-4807-8970-367F179EC235}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {03288108-8BF1-417D-A1E1-0677589FBFE5}

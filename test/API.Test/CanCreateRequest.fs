@@ -11,6 +11,6 @@ module CanCreateRequest =
     [<InlineData("PUT", "WithBody")>]
     [<InlineData("DELETE", "WithQueryString")>]
     let ``Request is crated for every HTTP word`` (httpWord: string, resultType: string) =
-        let request = Automated.ApiCheck.WithString("https://testwebhooks.com/c/Automated.ApiCheck").WithMethod(httpWord).WithPayload("{property:'test'}")
+        let request = Automated.Api.ApiCall.WithString("https://testwebhooks.com/c/Automated.ApiCheck").WithMethod(httpWord).WithPayload("{property:'test'}")
 
         request.GetType().Name |> should equal resultType
