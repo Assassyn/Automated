@@ -16,5 +16,7 @@ module SimpleQueryReturnsResults =
                 .WithMethod("GET")
                 .WithPayload("{property:'test'}")
                 .Execute()
+                |> Async.AwaitTask
+                |> Async.RunSynchronously
 
         response.HttpStatusCode |> should equal HttpStatusCode.OK

@@ -18,8 +18,9 @@ namespace Automated.Api
         {
             var client = new HttpClient();
 
-            client.BaseAddress = this.uri;
-            client.GetAsync()
+            var response = await client.GetAsync(this.uri);
+
+            return new Response(response.StatusCode, string.Empty);
         }
     }
 }
