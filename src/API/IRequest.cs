@@ -1,7 +1,9 @@
-﻿namespace Automated.Api
+﻿using System.Threading.Tasks;
+
+namespace Automated.Api
 {
     public interface IRequest
     {
-        Response Execute();
+        Task<Response> Execute();
     }
 }

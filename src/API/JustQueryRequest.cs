@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Automated.Api
 {
@@ -12,9 +14,12 @@ namespace Automated.Api
             this.uri = uri;
             this.method = method;
         }
-        public Response Execute()
+        public async Task<Response> Execute()
         {
-            throw new NotImplementedException();
+            var client = new HttpClient();
+
+            client.BaseAddress = this.uri;
+            client.GetAsync()
         }
     }
 }

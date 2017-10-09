@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Automated.Api
 {
@@ -14,7 +15,7 @@ namespace Automated.Api
             this.method = method;
             this.payload = payload;
         }
-        public Response Execute()
+        public Task<Response> Execute()
         {
             throw new NotImplementedException();
         }

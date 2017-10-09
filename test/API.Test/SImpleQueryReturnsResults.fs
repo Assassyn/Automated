@@ -2,16 +2,19 @@
 
 module SimpleQueryReturnsResults = 
     open System
+    open System.Net
     open Xunit
     open FsUnit.Xunit
 
     [<Fact>]
-    let ``When execute get request the response code is 200`` (httpWord: string, resultType: string) =
-        let request = Automated
-			.Api
-			.ApiCall
-			.WithString("https://testwebhooks.com/c/Automated.ApiCheck")
-			.WithMethod(httpWord)
-			.WithPayload("{property:'test'}")
+    let ``When execute get request the response code is 200`` () =
+        let response = 
+            Automated
+                .Api
+                .ApiCall
+                .WithString("https://testwebhooks.com/c/Automated.ApiCheck")
+                .WithMethod("GET")
+                .WithPayload("{property:'test'}")
+                .Execute()
 
-        request.GetType().Name |> should equal resultType
+        response.HttpStatusCode |> should equal HttpStatusCode.OK
