@@ -4,6 +4,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Automated.API</AssemblyName>
     <RootNamespace>Automated.API</RootNamespace>
+    <Version>0.1.0</Version>
+    <Authors>Szymon Sasin</Authors>
+    <Company>Automated</Company>
+    <Product></Product>
+    <Description>APi to run atuomated test for any possible API.
+
+Will allow to easily connect and then run multiple queries.</Description>
+    <Copyright>Szymon Sasin</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
