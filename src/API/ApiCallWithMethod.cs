@@ -20,6 +20,7 @@ namespace Automated.Api
                 case "DELETE":
                     return new JustQueryRequest(this.uri, this.method);
                 case "POST":
+                case "PUT":
                     return new WithPayloadRequest(this.uri, this.method, payload);
                 default:
                     throw new NullReferenceException("Method does not exist");
