@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Automated.Test.Browser</AssemblyName>
+    <RootNamespace>Automated.Test.Browser</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
